@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan to View Invitation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .app-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .scan-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .scan-container:hover {
+            transform: scale(1.05);
+        }
+
+        .scan-container img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .scan-container img:hover {
+            opacity: 0.8;
+        }
+
+        .scan-container a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .scan-container a:hover {
+            color: #db1c48;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="scan-container">
+            <a href="./img/Sister Marriage Invitation.pdf">
+                <img src="./img/Scan.png" alt="Scan QR">
+                <p>Click to View Invitation</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
